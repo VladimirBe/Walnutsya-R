@@ -18,15 +18,15 @@
   {% if object.cover %}
   <meta property="og:image" content="https://{{ request.get_host }}/media/{{ object.cover }}"/>
   {% endif %}
-  <meta property="og:site_name" content="python.web.id" />
+  <meta property="og:site_name" content="http://vladimirb.pythonanywhere.com/" />
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:description" content="{% if object.meta_description %}{{ object.meta_description }}{% else %}{{ object.description|safe|striptags|truncatewords:"20" }}{% endif %}"/>
   {% if object.cover %}
   <meta name="twitter:image:src" content="https://{{ request.get_host }}/media/{{ object.cover }}"/>
   {% endif %}
   <meta name="twitter:title" content="{{ object.title }}"/>
-  <meta name="twitter:domain" content="python.web.id"/>
-  <meta name="twitter:creator" content="@agusmakmun6"/>
+  <meta name="twitter:domain" content="http://vladimirb.pythonanywhere.com/"/>
+  <meta name="twitter:creator" content="@Vladimi07766162"/>
 {% endblock %}
 
 {% block content %}
@@ -56,9 +56,8 @@
 
     <div class="share panel-body" id="non-printable">
       <span>Share on: </span>
-      <a class="btn btn-sm btn-primary cst__radius" href="https://www.facebook.com/sharer/sharer.php?u=https://python.web.id{% url "detail_post_page" slug=object.slug %}" target="_blank">Facebook</a>
-      <a class="btn btn-sm btn-danger cst__radius" href="https://plus.google.com/share?url=https://python.web.id{% url "detail_post_page" slug=object.slug %}" target="_blank">Google+</a>
-      <a class="btn btn-sm btn-info cst__radius" href="https://twitter.com/share" target="_blank">Twitter</a>
+      <a class="btn btn-sm btn-primary cst__radius" href="https://www.facebook.com/sharer/sharer.php?u=http://vladimirb.pythonanywhere.com{% url "detail_post_page" slug=object.slug %}" target="_blank">Facebook</a>
+            <a class="btn btn-sm btn-info cst__radius" href="https://twitter.com/share" target="_blank">Twitter</a>
       <a class="btn btn-sm btn-success cst__radius" href="javascript:window.print()">Print Page</a>
     </div>
 
