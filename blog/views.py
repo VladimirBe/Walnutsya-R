@@ -2,6 +2,7 @@ import time
 import datetime
 import socket
 import json
+import os
 
 from django.views import generic
 from django.http import HttpResponse
@@ -45,7 +46,13 @@ def handler500(request):
     response.status_code = 500
     return response
 
+def home(request):
+    return render(request, 'home.html', {})
 
+def galery(request):
+    path="static/assets/images/galeria/"
+    img_list =os.listdir(path)
+    return render(request, 'galery.html', {'images': img_list})
 
 class HomepageView(generic.ListView):
     queryset = Post.objects.published()

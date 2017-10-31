@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'site_secret_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['*']
 SITE_ID = 1
 EMAIL_HOST = 'smtp.gmail.com'
@@ -173,14 +173,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    '/home/VladimirB/Walnutsya/static/',
 )
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = '/home/VladimirB/Django-Blog-Python-Learning/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = 'home/VladimirB/Walnutsya/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Editor Redactor
 import time

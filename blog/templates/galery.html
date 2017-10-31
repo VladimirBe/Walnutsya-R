@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+  {% block message_info_homepage %}{% endblock %}
+  
+    <!-- Gallery Grid 3 -->
+    <section>
+      <div class="container">
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!-- Portfolio Gallery Grid -->
+              <div id="grid" class="gallery-isotope grid-4 gutter clearfix";style="position: relative; height: 570px";>
+
+{% for image in images %}
+								<div class="gallery-item photography; ";style="position: absolute; left: 0px; top: 0px";>
+                  <div class="thumb">
+                    <img class="img-fullwidth" src="{% static 'assets/images/galeria/'%}{{image}}" alt="project">
+                    <div class="overlay-shade"></div>
+                    <div class="icons-holder">
+                      <div class="icons-holder-inner">
+                        <div class="social-icons icon-sm icon-dark icon-circled icon-theme-colored">
+                          <a data-lightbox="image" href="{% static 'assets/images/galeria/'%}{{image}}"><i class="fa fa-picture-o"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="hover-link" data-lightbox="image" href="{% static 'assets/images/galeria/'%}{{image}}  ">Mai mult</a>
+                  </div>
+                </div>
+{% endfor %}
+ 
+              <!-- End Portfolio Gallery Grid -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+  
+  {% endblock %}

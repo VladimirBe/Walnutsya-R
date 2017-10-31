@@ -1,40 +1,50 @@
-<div class="container-fluid">
- <!-- Second navbar for search -->
- <nav class="navbar navbar-inverse navbar-fixed-top">
-   <div class="container">
-     <!-- Brand and toggle get grouped for better mobile display -->
-     <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </button>
-       <a class="navbar-brand" href="{% url 'homepage' %}">Walnutsia</a>
-     </div>
 
-     <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse" id="navbar-collapse-3">
-       <ul class="nav navbar-nav navbar-right">
-         <li><a href="/about/">About</a></li>
-         <li><a href="{% url 'contact_page' %}">Contact</a></li>
-         <!-- <li><a href="/resource/">Resource</a></li>-->
-         <li><a href="{% url 'sitemap_page' %}">Sitemap</a></li>
-         <li><a href="{% url 'trending_posts_page' %}">Trending</a></li>
-         <li>
-           <a class="btn btn-default btn-outline btn-circle collapsed cst__btn__search__outline"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
-         </li>
-       </ul>
-       <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse3">
-         <form method="get" action="{% url 'search_posts_page' %}" class="navbar-form navbar-right" role="search">
-           <div class="form-group">
-             {% csrf_token %}
-             <input type="text" name="q" maxlength="140" class="form-control cst__radius" placeholder="Search" required/>
-           </div>
-           <button type="submit" class="btn btn-danger cst__radius"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-         </form>
-       </div>
-     </div><!-- /.navbar-collapse -->
-   </div><!-- /.container -->
- </nav><!-- /.navbar -->
-</div><!-- /.fluid -->
+{% load staticfiles %}
+<header id="header" class="header">
+  <div class="header-top bg-black-333 sm-text-center border-top-theme-color-3px p-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="widget no-border m-0">
+            <ul class="list-inline xs-text-center text-white mt-5">
+
+              <li class="m-0 pl-10 pr-10"> <a href="#" class="text-white"><i class="fa fa-phone text-theme-colored"></i> 0 74 74 76 2 76</a> </li>
+              <li class="m-0 pl-10 pr-10">
+                <a href="mailto:walnutsia@gmail.com" class="text-white"><i class="fa fa-envelope-o text-theme-colored"></i> walnutsia@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 pr-0">
+          <div class="widget no-border m-0">
+            <ul class="styled-icons icon-dark icon-flat icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
+              <li><a target="_blank" href="https://facebook.com/Walnutsia/"><i class="fa fa-facebook text-white"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="col-md-2">
+          <a class="btn btn-colored btn-flat btn-theme-colored bs-modal-ajax-load pb-10" href="contact.html">Contact</a>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+      <div class="container">
+        <nav id="menuzord-right" class="menuzord default">
+          <a class="menuzord-brand pull-left flip xs-pull-center mt-20" href="{% url 'home' %}">
+            <img src="{% static 'assets/images/Logo.png' %}" alt="">
+          </a>
+          <ul class="menuzord-menu">
+            <li class="active"><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="despre-noi.html">Despre noi</a></li>
+            <li><a href="{% url 'homepage' %}">Blog</a></li>
+            <li><a href="{% url 'galery' %}">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hu/index.html"><img style="max-width:25px;" src="static/assets/images/english.png" alt="English" /></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
