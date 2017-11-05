@@ -49,6 +49,9 @@ def handler500(request):
 def home(request):
     return render(request, 'home.html', {})
 
+def under_construction(request):
+    return render(request, 'Under construction.html', {})
+
 def galery(request):
     path="static/assets/images/galeria/"
     img_list =os.listdir(path)

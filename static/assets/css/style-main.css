@@ -4534,6 +4534,7 @@ blockquote p {
 */
 .icon-box {
   padding: 40px 17px;
+  margin-bottom:30px;
 }
 .icon-box .icon {
   display: inline-block;
@@ -6437,3 +6438,6 @@ blockquote p {
 }
 
 /*# sourceMappingURL=style-main.css.map */
+.border-1px {
+    border: 1px solid #eeeeee !important;
+}

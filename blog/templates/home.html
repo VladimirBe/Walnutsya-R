@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-
+{% load globaltags %}
 {% block content %}
   {% block message_info_homepage %}{% endblock %}
 
@@ -388,182 +388,126 @@
         </div>
       </div>
     </section>
-    <!-- Section: Services -->
-       <section id="services" class="layer-overlay overlay-white-4" data-bg-img="images/pattern/leaf7.png">
-         <div class="container pb-40">
-           <div class="section-title text-center">
-             <div class="row">
-               <div class="col-md-12">
-                 <h2 class="mt-0 line-height-1">Serviciile <span class="text-theme-colored">noastre</span></h2>
-               </div>
-             </div>
-           </div>
+
+     <!-- Section: Services -->
+       <section id="services" class="layer-overlay overlay-dark-8" data-bg-img="static/assets/images/leaf1.png">
+      <div class="container pt-40 pb-40">
+
+<div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="text-white">Serviciile <span class="text-theme-colored">Noastre</span></h2>
+            </div>
+          </div>
+        </div>
+
            <div class="section-content">
              <div class="row multi-row-clearfix">
                <div class="col-xs-12 col-sm-6 col-md-6">
-                 <div class="icon-box bg-white-transparent-4 p-20 border-1px">
-                   <a class="icon pull-right text-white mt-15" href="#">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                   <a class="icon pull-right  sm-pull-none flip ll-right text-white mt-15" href="#">
                     <img src="{% static 'assets/images/test-ground.png' %}" alt="Test ground">
                    </a>
                    <h4 class="icon-box-title"><a href="#">Pregatirea solului</a></h4>
-                   <p>Oferim consultații în materie de pregătire a suprafeței cât <și a conținutului (minerale, substanțe hrănitoare etc.) terenului pe care urmează a fi plantată livada. </p>
+                   <p>Oferim consultații în materie de pregătire a suprafeței cât și a conținutului (minerale, substanțe hrănitoare etc.) terenului pe care urmează a fi <br/>plantată livada. </p>
                  </div>
                </div>
                <div class="col-xs-12 col-sm-6 col-md-6">
-                 <div class="icon-box bg-white-transparent-4 p-20 border-1px">
-                   <a class="icon pull-right text-white mt-15" href="#">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                   <a class="icon pull-right  sm-pull-none flip text-white mt-15" href="#">
                      <img src="{% static 'assets/images/prepare-ground.png' %}" alt="Prepare ground">
                    </a>
                    <h4 class="icon-box-title"><a href="#">Creștere și altoire puieți</a></h4>
-                   <p>Preparăm poltaitoi, altoim și creștem puieți.</p>
+                   <p>Pregătim portaltoi, altoim și creștem puieți. Altoirea se face folosind aparate de cea mai bună calitate, procesul de altoire este strict supravegheat de specialiștii noștri în vederea maximizării calității</p>
                  </div>
                </div>
                <div class="col-xs-12 col-sm-6 col-md-6">
-                 <div class="icon-box bg-white-transparent-4 p-20 border-1px">
-                  <a class="icon pull-right text-white mt-15" href="#">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                  <a class="icon pull-right  sm-pull-none flip text-white mt-15" href="#">
                      <img src="{% static 'assets/images/comercializare-puieti.png' %}" alt="Test ground">
                    </a>
                    <h4 class="icon-box-title"><a href="#">Comercializare puieți</a></h4>
-                   <p>Gamă variată de puieți.</p>
+                   <p>Avem o gamă variată de puieți. Puieții altoiți sunt păstrați în camere speciale de menținere a temperaturii și umidității.</p>
                  </div>
                </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
-                 <div class="icon-box bg-white-transparent-4 p-20 border-1px">
-                  <a class="icon pull-right text-white mt-15" href="#">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                  <a class="icon pull-right  sm-pull-none flip text-white mt-15" href="#">
                      <img src="{% static 'assets/images/intretinere livada.png' %}" alt="Test ground">
                    </a>
                    <h4 class="icon-box-title"><a href="#">Consultații intreținere livadă</a></h4>
-                   <p>Vă ajutăm .</p>
+                   <p>Vă ajutăm pe tot parcursul creșterii livezii până la maturitatea ei, cu sfaturi legate de intretinere și îngrijire astfel încât să obțineți producție maximă.</p>
                  </div>
+				 
                </div>
+			             <div class="col-xs-12 col-sm-6 col-md-6">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                  <a class="icon pull-right  sm-pull-none flip text-white mt-15" href="#">
+                     <img src="{% static 'assets/images/walnut.png' %}" alt="Test ground">
+                   </a>
+                   <h4 class="icon-box-title"><a href="#">Import nuci și miez de nuci</a></h4>
+                   <p>Importăm nuci și miez de înaltă calitate la prețuri avantajoase. <br/>Colectăm de la clienți vechi de-ai noștri, astfel calitatea și omogenitatea fiind asigurate</p>
+                 </div>
+				  </div>
+				 			             <div class="col-xs-12 col-sm-6 col-md-6">
+                 <div class="icon-box bg-lighter p-20 border-1px">
+                  <a class="icon pull-right  sm-pull-none flip text-white mt-15" href="#">
+                     <img src="{% static 'assets/images/curatat.png' %}" alt="Test ground">
+                   </a>
+                   <h4 class="icon-box-title"><a href="#">Experți la comandă în livada voastră</a></h4>
+                   <p>Profesioniști în domeniu se pot deplasa la livada voastră pentru instruire directă în modalitățile de curățare a copacilor. Putem organiza și un grup care vor face toată munca. </p>
+                 </div>
+				 </div>
+				 
+              
                </div>
              </div>
            </div>
          </div>
        </section>
 
-    <!-- Section: Campaign -->
-   <!-- <section>
-      <div class="container pb-40">
-        <div class="section-title text-center">
+ 
+    <!-- Section: Completed Projects -->
+    <section class="divider layer-overlay overlay-dark-9" data-bg-img="{% static 'assets/images/nuci pictura.jpg' %}">
+      <div class="container">
+        <div class="section-title">
           <div class="row">
-            <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <h2 class="text-uppercase line-bottom-center mt-0">Produsele <span class="text-theme-colored">noastre</span></h2>
-              <p>Informatii referitoare la stocul disponibil  puteți obține la<br /> <strong>telefon: 0733-94-68-30</strong><br /> sau<br /> <strong>adresa mail: <a href="mailto:contactpuietnuc@yahoo.com">contactpuietnuc@yahoo.com</a></strong></p>
+            <div class="col-md-12 text-center">
+              <h2 class="text-white mt-0 line-height-1">Ultimele articole din <span class="text-theme-colored">Blog</span></h2>
             </div>
           </div>
         </div>
-        <div class="row multi-row-clearfix">
-          <div class="col-md-12">
+        <div class="section-content text-center">
+          <div class="row">
             <div class="owl-carousel-4col" data-dots="true">
-
-			  			  <div class="item">
-                <div class="campaign bg-silver-light maxwidth500 mb-30">
-                  <div class="thumb">
-                    <img src="images/project/alsoszentivani117.html" alt="" class="img-fullwidth">
-                    <div class="campaign-overlay"></div>
-                  </div>
-                  <div class="campaign-details clearfix p-15 pt-10 pb-10">
-                    <h5 class="text-theme-colored font-weight-500 mb-0">Alsoszentivanyi 117</h5>
-                    <h4 class="font-weight-700 mt-0"><a href="#">1 an</a></h4>
-                    <p>																						Dimensiune 30 - 100cm
-																														<br /><a class="text-theme-colored ml-5" href="#"> →</a></p>
-                    <div class="campaign-bottom border-top clearfix mt-20">
-                      <ul class="list-inline font-weight-600 pull-left flip pr-0 mt-10">
-                        <li class="text-gray"><i class="fa fa-shop-alt mr-10"></i>40,00 LEI</li>
-                      </ul>
-                      <a class="btn btn-xs btn-theme-colored font-weight-600 font-11 pull-right flip mt-10" href="detaliid61c.html?id=5">Detalii</a>
-                    </div>
-                  </div>
+			{% recentposts as recentposts_list %}
+			{% for post in recentposts_list %}
+              <div class="item">
+                <div class="thumb">
+				<div class="cst__cover__posts">
+				{% if post.cover %}
+				<a href="{% url 'detail_post_page' slug=post.slug %}">
+                  <img class="img-fullwidth" src="/media/{{ post.cover }}" alt="{{ post.title }}">
+				  </a>
+				  </div>
+                </div>
+				  {% endif %}
+                <div class="p-15">
+                  <h4 class="mb-5"><a class="text-white" href="{% url 'detail_post_page' slug=post.slug %}">{{ post.title }}</a></h4>
+                  <div id="post-words">
+				  <p>{{ post.description|safe|striptags|truncatewords:"20"|linebreaks }} </p>
+				  </div>
                 </div>
               </div>
-							  <div class="item">
-                <div class="campaign bg-silver-light maxwidth500 mb-30">
-                  <div class="thumb">
-                    <img src="images/project/milotaikesei.html" alt="" class="img-fullwidth">
-                    <div class="campaign-overlay"></div>
-                  </div>
-                  <div class="campaign-details clearfix p-15 pt-10 pb-10">
-                    <h5 class="text-theme-colored font-weight-500 mb-0">Milotai Kesei</h5>
-                    <h4 class="font-weight-700 mt-0"><a href="#">1 an</a></h4>
-                    <p>											Dimensiune 30 - 100cm.Intră pe rod în 2 ani de la plantație.
-																				<br /><a class="text-theme-colored ml-5" href="#"> →</a></p>
-                    <div class="campaign-bottom border-top clearfix mt-20">
-                      <ul class="list-inline font-weight-600 pull-left flip pr-0 mt-10">
-                        <li class="text-gray"><i class="fa fa-shop-alt mr-10"></i>42,00 LEI</li>
-                      </ul>
-                      <a class="btn btn-xs btn-theme-colored font-weight-600 font-11 pull-right flip mt-10" href="detalii3a9f.html?id=6">Detalii</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-							  <div class="item">
-                <div class="campaign bg-silver-light maxwidth500 mb-30">
-                  <div class="thumb">
-                    <img src="images/project/1.html" alt="" class="img-fullwidth">
-                    <div class="campaign-overlay"></div>
-                  </div>
-                  <div class="campaign-details clearfix p-15 pt-10 pb-10">
-                    <h5 class="text-theme-colored font-weight-500 mb-0">Alsoszentivanyi Kesei</h5>
-                    <h4 class="font-weight-700 mt-0"><a href="#">1 an</a></h4>
-                    <p>																																																							Dimensiune: 30 cm - 1m
-																																																												<br /><a class="text-theme-colored ml-5" href="#"> →</a></p>
-                    <div class="campaign-bottom border-top clearfix mt-20">
-                      <ul class="list-inline font-weight-600 pull-left flip pr-0 mt-10">
-                        <li class="text-gray"><i class="fa fa-shop-alt mr-10"></i>42,00 LEI</li>
-                      </ul>
-                      <a class="btn btn-xs btn-theme-colored font-weight-600 font-11 pull-right flip mt-10" href="detalii8803.html?id=7">Detalii</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-							  <div class="item">
-                <div class="campaign bg-silver-light maxwidth500 mb-30">
-                  <div class="thumb">
-                    <img src="images/project/milotai10.html" alt="" class="img-fullwidth">
-                    <div class="campaign-overlay"></div>
-                  </div>
-                  <div class="campaign-details clearfix p-15 pt-10 pb-10">
-                    <h5 class="text-theme-colored font-weight-500 mb-0">Milotai 10</h5>
-                    <h4 class="font-weight-700 mt-0"><a href="#">2 ani</a></h4>
-                    <p>																						Dimensiune 100cm- 200cm<br /><a class="text-theme-colored ml-5" href="#"> →</a></p>
-                    <div class="campaign-bottom border-top clearfix mt-20">
-                      <ul class="list-inline font-weight-600 pull-left flip pr-0 mt-10">
-                        <li class="text-gray"><i class="fa fa-shop-alt mr-10"></i>65,00 LEI</li>
-                      </ul>
-                      <a class="btn btn-xs btn-theme-colored font-weight-600 font-11 pull-right flip mt-10" href="detaliic3c9.html?id=8">Detalii</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-							  <div class="item">
-                <div class="campaign bg-silver-light maxwidth500 mb-30">
-                  <div class="thumb">
-                    <img src="images/project/alsoszentivani117.html" alt="" class="img-fullwidth">
-                    <div class="campaign-overlay"></div>
-                  </div>
-                  <div class="campaign-details clearfix p-15 pt-10 pb-10">
-                    <h5 class="text-theme-colored font-weight-500 mb-0">Alsoszentivanyi 117</h5>
-                    <h4 class="font-weight-700 mt-0"><a href="#">2 ani</a></h4>
-                    <p>																																	Dimensiune &nbsp; 100-200 cm&nbsp;<br /><a class="text-theme-colored ml-5" href="#"> →</a></p>
-                    <div class="campaign-bottom border-top clearfix mt-20">
-                      <ul class="list-inline font-weight-600 pull-left flip pr-0 mt-10">
-                        <li class="text-gray"><i class="fa fa-shop-alt mr-10"></i>65,00 LEI</li>
-                      </ul>
-                      <a class="btn btn-xs btn-theme-colored font-weight-600 font-11 pull-right flip mt-10" href="detalii5255.html?id=9">Detalii</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
+			 {% endfor %}
+			 
             </div>
           </div>
         </div>
       </div>
-    </section>-->
+    </section>
+
+  
     <!-- Divider: Funfact -->
     <section class="divider parallax layer-overlay overlay-dark-4" data-bg-img="static/assets/images/slider/slide7.jpg" data-parallax-ratio="0.7">
       <div class="container pt-90 pb-90">

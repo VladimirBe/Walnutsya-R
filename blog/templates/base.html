@@ -56,7 +56,8 @@
   <link href="{% static "assets/js/revolution-slider/css/layers.css" %}" rel="stylesheet">
   <link href="{% static "assets/js/revolution-slider/css/navigation.css" %}" rel="stylesheet">
   <link href="{% static "assets/css/colors/theme-skin-green.css" %}" rel="stylesheet">
-  <link href="{% static "assets/css/blog.css" %}" rel="stylesheet">
+  <!--<link href="{% static "assets/css/blog.css" %}" rel="stylesheet">-->
+  <link href="{% static "assets/css/style.css" %}" rel="stylesheet">
 
    <script src="{% static "assets/js/jquery.min.js" %}"></script>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -89,6 +90,7 @@
 
   {% include "includes/menu.html" %}
 
+  
     <!--<div class="container main__container">
       <div class="row">
         <div class="col-sm-8 blog-main">-->
@@ -101,15 +103,20 @@
   <!--  </div> /.row -->
   <!--</div> /.main__container -->
 
-  <div class="blog-footer" id="non-printable">
-<p>
-      Copyright &#169; 2016-{% now "Y" %}, <a href="{% url "homepage" %}">Walnutsia</a> -
-      Powered <a href="https://www.djangoproject.com/" target="_blank">Django</a> -
-      Created by <a href="http://vladimirb.pythonanywhere.com/" target="_blank">Vladimir</a></p>
-    <p>
-      <a href="#">Back to top</a>
-    </p>
-  </div>
+      <div class="container-fluid bg-theme-colored p-20" >
+      <div class="row text-center">
+        <div class="col-md-12">
+          <p class="text-white font-11 m-0">Copyright &#169; 2016-{% now "Y" %}, <a href="{% url "homepage" %}"><strong>Walnutsia</strong></a> -
+      Powered <a href="https://www.djangoproject.com/" target="_blank"><strong>Django</strong></a> -
+      Created by <a href="http://vladimirb.pythonanywhere.com/" target="_blank"><strong>Vladimir</strong></a></p>
+        </div>
+      </div>
+    </div>
+
+  
+
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+
   <!-- Footer Scripts -->
   <!-- external javascripts -->
   <script src="{% static "assets/js/bootstrap.min.js" %}"></script>

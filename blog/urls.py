@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^blog/$', HomepageView.as_view(), name='homepage'),
     url(r'^galery/$', galery, name='galery'),
 	url(r'^$', home, name='home'),
+	url(r'^under_construction/$', under_construction, name='under_construction'),
     url(r'^blog/(?P<slug>[\w\-]+)/$', DetailPostView.as_view(), name='detail_post_page'),
     url(r'^search/$', SearchPostsView.as_view(), name='search_posts_page'),
     url(r'^author/(?P<username>[\w\-]+)/$', AuthorPostsView.as_view(), name='author_posts_page'),
